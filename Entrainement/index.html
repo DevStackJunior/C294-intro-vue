@@ -1,0 +1,11 @@
+<div id="app">
+    <product-details 
+        :product="product"
+        :price="price"
+        :brand="brand"
+        @addtocart="cart++"
+        :premium="true"
+        :src="image"
+    />
+    <p>Panier : {{ cart.length }}</p>
+</div>
