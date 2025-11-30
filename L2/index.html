@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
   <body>
     <div id="app">
       <h1>{{ product }}</h1>
+      <p>{{ description }}</p>
     </div>
 
     <!-- Import Js -->
@@ -18,8 +19,7 @@
     <script src="./main.js"></script>
     <!-- ISSUE 1 | SEPARER EXECUTION CONSOLE ET PRE-CHARGEMENT DU APP MOUNT D'UN SCRIPT AVEC SRC -->
     <script>
-      window.mountedApp = app.mount('#app');
+      window.mountedApp = app.mount('#app')
     </script>
-
   </body>
 </html>
